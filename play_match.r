@@ -1,11 +1,11 @@
 # play_match(15687, 17065, 16077, 14351, 16323, 16928, 16039, 14379)
-play_match <- function(p1_tt, p1_ba, p1_sq, p1_te, p2_tt, p2_ba, p2_sq, p2_te) {
-  result_tt <- 1:100000
-  result_ba <- 1:100000
-  result_sq <- 1:100000
-  result_te <- 1:100000
-  diff <- 1:100000
-  for (i in 1:100000) {
+play_match <- function(n_sim, p1_tt, p1_ba, p1_sq, p1_te, p2_tt, p2_ba, p2_sq, p2_te) {
+  result_tt <- 1:n_sim
+  result_ba <- 1:n_sim
+  result_sq <- 1:n_sim
+  result_te <- 1:n_sim
+  diff <- 1:n_sim
+  for (i in 1:n_sim) {
     result_tt[i] <- 0
     result_ba[i] <- 0
     result_sq[i] <- 0
